@@ -1,0 +1,326 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Jitendra - One Page Two Column Resume
+% LaTeX Template
+% Version 1.3 (22/9/2018)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% v1.4 author:
+% Jitendra Kalyan
+%
+% v1.4 repository:
+% https://github.com/pjk23/latex_resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Add various styling and section options and allow for multiple pages smoothly.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.3:
+% 1. Removed MacFonts version as I have no desire to maintain it nor access to macOS
+% 2. Switched column ordering
+% 3. Changed font styles/colors for easier human readability
+% 4. Added, removed, and rearranged sections to reflect my own experience
+% 5. Hid last updated
+%
+% v1.2:
+% 1. Added publications in place of societies.
+% 2. Collapsed a portion of education.
+% 3. Fixed a bug with alignment of overflowing long last updated dates on the top right.
+%
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-reversed}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Jitendra Kalyan}{ %\urlstyle{same}\href{http://example.com}{example.com}| \href{http://example2.co}{example2.co}\\
+\href{mailto:kalyanjitendra@outlook.com}{kalyanjitendra@outlook.com} | \href{tel:+918919401054}{8919.4010.54}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.60\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{JP Morgan Chase \& Co}
+\descript{| Hyderabad, India }
+\location{Associate Software Engineer(Feb 2021 – Present)\\ Software Engineer (Jul 2018 – Feb 2021)}
+\runsubsubsection{Operational Insights Product}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Designed and developed a decoupled system to automate the process identifying anomalies in production capacity/volumes data and notify the stakeholders with actionable insights.Reduced the detection time for stakeholders from couple of hours to a few minutes.
+\item Configured and implemented deployment pipelines using in house tools to perform automated deployments to all environments.
+\item Contributed to development and deployment of Apache Airflow in kubernetes environment to improve the efficiency of data processing and ml pipelines.
+\item Contributed to migrating from legacy SAS reports by developing power bi reports using t-sql.
+\end{tightemize}
+\sectionsep
+
+\runsubsubsection{Named Entity Recognition system}
+\begin{tightemize}
+\item Designed and developed a django application to perform entity tagging on production data to identify patterns and insights and populate tagged data for graph db consumption.
+\end{tightemize}
+\sectionsep
+
+\runsubsubsection{IT Ops Transformation and modernization}
+\begin{tightemize}
+\item Contributed to design and development of a self serviced application to automatically identify automation opportunities from large quantities of production toil data using Machine Learning.
+\item Implemented NLP models including word2Vec, Doc2Vec to derive insights from a large number of documents to identify and quantify potential automation from change plan documents.
+\end{tightemize}
+\sectionsep
+
+\runsubsubsection{Force for Good - Tech for social good}
+\begin{tightemize}
+\item Contributed to development of a web platform for the Youth 4 Jobs foundation. An NGO which train physically challenged students for employment opportunities.
+\item The project was built using AWS services which include AWS EC2, S3.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+% \runsubsection{State Space Robotics Team}
+% \descript{| Path-Planning Lead}
+% \location{Jan 2018 – Present | Mississippi State, MS}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed an application to to visualise production product flows to observe incidents and changes in real time.
+\item Developed a web application to automatically determine key aspects and their sentiments from customer reviews using Aspect based sentiment Analytics.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Research}
+% \runsubsection{Cornell Robot Learning Lab}
+% \descript{| Researcher}
+% \location{Jan 2014 – Jan 2015 | Ithaca, NY}
+% Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.
+% \sectionsep
+
+% \runsubsection{Cornell Phonetics Lab}
+% \descript{| Head Undergraduate Researcher}
+% \location{Mar 2012 – May 2013 | Ithaca, NY}
+% Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research.
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COMMUNITY SERVICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Community Service}
+
+% \begin{tabular}{rll}
+% 2013 -- 2018    & Tennessee     & St. Baldrick's Foundation\\
+% 2014 -- 2017	& Tennessee     & American Cancer Society's Hope Lodge\\
+% 2013 -- 2015    & Tennessee     & Habitat for Humanity\\
+% 2011 -- 2015    & Tennessee     & Special Olympics\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Societies}
+
+% \begin{tabular}{rll}
+% 2018 -- 2018    & National      & Association of Computing Machinery (ACM)\\
+% 2017 -- 2019	& National      & Scrum Alliance Certified ScrumMaster\\
+% 2015 -- 2019    & University    & Shackouls Honors College\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Publications AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications \& Awards}
+
+\begin{tightemize}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\item Real-time Aspect-based Sentiment Analysis on consumer reviews\\
+link:// \href{https://link.springer.com/chapter/10.1007/978-981-15-1097-7_67}{\bf Advances in Intelligent Systems and Computing, vol 1079. Springer}
+\item Customer Obsession award for resolving key blockers using automation.
+\item Certificate of Recognition for top contribution to Coder Club initiative at JP Morgan Chase & Co.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Technical Skills}
+\descript{Programming Languages}
+Python \textbullet{} Java \textbullet{} JavaScript \textbullet{} C/C++ \\
+\sectionsep
+
+\descript{Frameworks}
+Django \textbullet{} Angular \textbullet{} Flask \\
+\sectionsep
+
+\descript{Databases \& Tools}
+MySql \textbullet{} MsSql \textbullet{} Oracle \textbullet{} Git\\
+Jira \textbullet{} Jenkins \textbullet{} Confluence
+\sectionsep
+
+\descript{Cloud Computing}
+Docker \textbullet{} Kubernetes \\
+AWS \textbullet{} Cloud Foundry \textbullet{} Heroku \\
+\sectionsep
+
+\descript{Skills}
+Machine Learning \textbullet{} NLP \\
+Scrum, Agile \textbullet{} Test-driven development \textbullet{} Object-Oriented Programming\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Leadership
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Leadership}
+
+\begin{tightemize}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\item Mentored over 700 students by playing the role: Subject Matter Expert in the Code for Good hackathons for the last 2 years.
+\item Coached 3 fellow middleware engineers to learn and work on Python projects for their career transformations.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CERTIFICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Certifications}
+Certified Kubernetes Application Developer[CKAD], 2021 (currently pursuing)
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications}
+% \renewcommand\refname{\vskip -1.3cm} % Couldn't get this working from the .cls file
+% \vspace{\topsep} 
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+% \subsection{Chaitanya Bharathi Institute of Technology}
+\descript{Chaitanya Bharathi Institute of Technology\\BE/B.Tech in Computer Science}
+\location{May 2018 | Hyderabad, India}
+% College of Engineering \\
+\location{ Cum. GPA: 8.54 / 10.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Coursework}
+% \subsection{Graduate}
+% Analysis of Algorithms
+% \sectionsep
+
+% \subsection{Undergraduate}
+% Artificial Intelligence \\
+% {\footnotesize \textit{\textbf{(Teaching Assistant) }}} \\
+% AI Robotics \\
+% Operating Systems I \\
+% Calculus I-IV \\
+% Data Analysis I \\
+% Introduction to Probability \\
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Societies
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Societies}
+% Allumni at CBIT Open Source Community \href{https://cosc.cbit.ac.in/}{COSC}\\
+
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Github:// \href{https://github.com/pjk23}{\bf pjk23} \\
+LinkedIn://  \href{ https://www.linkedin.com/in/jitendra-kalyan-ab3256124/}{\bf jitendra kalyan} \\
+\sectionsep
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
